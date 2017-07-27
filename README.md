@@ -1,0 +1,1 @@
+# mock-renderer-for-php-view
