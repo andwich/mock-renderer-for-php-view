@@ -1,0 +1,19 @@
+{% extends "layouts/default.twig" %}
+
+{# Settings
+////////////////////////////////////////////////// #}
+{% block meta %}{{ parent() }}{% endblock %}
+{% block title %}{{ d.title }}{% endblock %}
+{% block description %}{{ parent() }}{% endblock %}
+{% block keywords %}{{ parent() }}{% endblock %}
+{% block canonical %}{{ parent() }}{% endblock %}
+{% block styles %}{{ parent() }}{% endblock %}
+{% block scripts %}{{ parent() }}
+{% endblock %}
+
+{# Contents
+////////////////////////////////////////////////// #}
+{% block contents %}{% spaceless %}
+  {{ include('components/heading1.twig', {'heading': d.heading}) }}
+{% endspaceless %}{% endblock %}
+

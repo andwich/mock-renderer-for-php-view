@@ -1,0 +1,18 @@
+// #NAME:  Home
+// #STATE: done
+// #NOTE:  -
+
+{
+  "env": "develop",
+  "title": "Example title",
+  "heading": "It works!",
+  "copyright": "(C) example.com.",
+  "is_logged_in": false,
+  "member_menus": [
+    {
+      "text": "login",
+      "link": "/?mock=page--is-logged-in.json5"
+    }
+  ],
+  "heading": "It works!"
+}

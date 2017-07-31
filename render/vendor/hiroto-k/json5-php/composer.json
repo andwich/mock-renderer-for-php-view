@@ -1,0 +1,38 @@
+{
+  "name": "hiroto-k/json5-php",
+  "version": "1.0.2",
+  "description": "JSON5 parser for PHP",
+  "keywords": ["JSON", "JSON5", "PHP"],
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Hiroto-K",
+      "email": "hiro.yo.yo1610@gmail.com",
+      "homepage": "https://hiroto-k.net/",
+      "role": "developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "HirotoK\\JSON5\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "HirotoK\\JSON5\\Tests\\": "tests/src"
+    }
+  },
+  "scripts": {
+    "test": [
+      "phpunit"
+    ]
+  }
+}

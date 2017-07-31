@@ -1,0 +1,6 @@
+{
+  "require": {
+    "hiroto-k/json5-php": "~1.0",
+    "twig/twig": "2.4.3"
+  }
+}

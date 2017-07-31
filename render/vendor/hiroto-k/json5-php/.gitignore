@@ -1,0 +1,9 @@
+/vendor/
+/.idea/
+composer.lock
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.php-version
+!.gitkeep

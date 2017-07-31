@@ -1,0 +1,11 @@
+<header>
+  <p>{{ title }}</p>
+  {% if d.is_logged_in %}
+    <p>{{ d.member_name }}</p>
+  {% endif %}
+  <ul>
+    {% for member_menu in d.member_menus %}
+      <li><a href="{{ member_menu.link }}">{{ member_menu.text }}</a></li>
+    {% endfor %}
+  </ul>
+</header>

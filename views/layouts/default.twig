@@ -1,0 +1,31 @@
+{% spaceless %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  {% block meta %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  {% endblock %}
+  <title>{% block title %}default title{% endblock %}</title>
+  <meta name="description" content="{% block description %}default description{% endblock %}">
+  <meta name="keywords" content="{% block keywords %}default keyword{% endblock %}">
+  <link rel="canonical" href="{% block canonical %}default canonical{% endblock %}">
+  {% block styles %}
+    <link rel="stylesheet" href="assets/css/app.css">
+  {% endblock %}
+</head>
+<body>
+  <main>
+    {{ include('components/header.twig', {'title': d.title}) }}
+    {% block contents %}{% endblock %}
+    {{ include('components/footer.twig', {'copyright': d.copyright}) }}
+  </main>
+  {% block scripts %}
+    <script src="assets/js/app.js"></script>
+  {% endblock %}
+  {{ include("components/debug.twig") }}
+</body>
+</html>
+{% endspaceless %}

@@ -1,0 +1,12 @@
+{% if d.env != "production" %}
+<script>
+var ns = ns || {};
+ns.viewdata = {{ d|json_encode() }};
+if (window.console) {
+  window.console.groupCollapsed('*JSON.stringify(ns.viewdata)');
+    window.console.dir(ns.viewdata);
+    window.console.log(JSON.stringify(ns.viewdata));
+  window.console.groupEnd();
+}
+</script>
+{% endif %}
